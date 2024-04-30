@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #EEEEEE;
+    display: flex;
+
+}
+
+.unitconversion {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding-top: 20px;
+}
+
+.unitconversion>button {
+    height: 2.2rem;
+    width: 2.2rem;
+    border: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: black;
+    cursor: pointer;
+
+}
+
+.unitconversion>button:hover {
+    transform: scale(1.06);
+}
+
+
+.card {
+    width: 470px;
+    margin: auto;
+    border: 1px solid;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 18px; */
+    border-radius: 15px;
+    box-shadow: 8px 8px 12px rgb(82, 81, 81);
+    transition: all 0.7s ease-in-out;
+
+}
+
+.card:hover{
+    transform: scale(1.01);
+}
+.searchbar {
+    display: flex;
+    height: 40px;
+    justify-content: space-evenly;
+}
+
+#search {
+    height: 100%;
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+}
+
+#searchimg {
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+#searchbtn:hover {
+    transform: scale(1.06);
+}
+
+#searchbtn {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.imagebox {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+}
+#cloudimage{
+    object-fit: contain;
+}
+.tempbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+    row-gap: 5.8px;
+
+}
+
+.databox {
+    display: flex;
+    justify-content: space-between;
+    padding-left: inherit;
+    padding-right: inherit;
+    margin-top: 25px;
+}
+
+.boxleft {
+    display: flex;
+    color: white;
+    column-gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxright {
+    display: flex;
+    color: white;
+    column-gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.boxright>img,
+.boxleft img {
+    height: 2em;
+    object-fit: contain;
+}
+
+@media (max-width:377px) {
+   .databox{
+    flex-direction: column;
+    row-gap: 20px;
+   }
+}
